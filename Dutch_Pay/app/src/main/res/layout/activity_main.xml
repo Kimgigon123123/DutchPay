@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#DFCC93"
+    >
+
+    <TextView
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:text="더치페이 계산기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+
+        android:src="@drawable/dutchpay"
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:id="@+id/edt_money"
+            android:hint="금액입력(원)"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_calculate"
+            android:textSize="20dp"
+            android:text="계산"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+
+            android:text="인원"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_person"
+            android:text="0"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_plus"
+            android:textSize="20dp"
+            android:text="+"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_minus"
+            android:textSize="20dp"
+            android:text="-"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:text="더치금액"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_money"
+            android:text="0"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_reset"
+            android:textSize="20dp"
+            android:text="초기화"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
