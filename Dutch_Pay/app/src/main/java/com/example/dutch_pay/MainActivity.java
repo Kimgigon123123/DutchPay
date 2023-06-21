@@ -48,6 +48,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        if(v.getId()==R.id.btn_reset){
+
+            person = 0;
+            money =  0;
+            tv_person.setText(person+"");
+            tv_money.setText(money+"");
+            edt_money.setText("");
+        }
 
     }
 }
