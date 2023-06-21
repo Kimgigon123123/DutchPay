@@ -48,6 +48,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        if(v.getId()==R.id.btn_calculate){
+            try {
 
+                if(Integer.parseInt(edt_money.getText().toString())%10 == 0) {
+                    money = Integer.parseInt(edt_money.getText().toString());
+                }else{
+                    Toast.makeText(this, "올바른 금액을 입력해주세요.", Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Toast.makeText(this, "숫자를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            }
+
+            tv_money.setText(money/person+"");
+
+        }
     }
 }
