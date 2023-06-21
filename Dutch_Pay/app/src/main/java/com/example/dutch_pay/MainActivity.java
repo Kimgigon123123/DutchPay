@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if(v.getId()==R.id.btn_calculate){
             try {
+       
 
                 if(Integer.parseInt(edt_money.getText().toString())%10 == 0) {
                     money = Integer.parseInt(edt_money.getText().toString());
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             tv_money.setText(money/person+"");
 
-        if (v.getId() == R.id.btn_plus) {
+        else if (v.getId() == R.id.btn_plus) {
             tv_person.setText(++person + "");
         } else if (v.getId() == R.id.btn_minus) {
             if (person <= 1) {
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else {
                 tv_person.setText(--person + "");
             }
+        }
+         else if(v.getId()==R.id.btn_reset){
+
+            person = 0;
+            money =  0;
+            tv_person.setText(person+"");
+            tv_money.setText(money+"");
+            edt_money.setText("");
         }
     }
 }
